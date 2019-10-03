@@ -32,12 +32,12 @@ h1, h3, p {
   grid-row: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 #searchbox {
   margin-bottom: 0 !important;
-  width: 80%;
+  width: 80% !important;
 }
 
 #searchbox input {
