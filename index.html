@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="favicon-32.png" type="image/png">
+  <link rel="icon" sizes="64x64" href="favicon-64.png" type="image/png">
+  <link rel="icon" sizes="96x96" href="favicon-96.png" type="image/png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css">
+  <link rel="stylesheet" href="./src/index.css">
+  <link rel="stylesheet" href="./src/app.css">
+
+  <title>wine-test-app</title>
+</head>
+
+<body>
+  <div class="wine-app-page">
+    <img class="wine-app-logo" src="./logo.png"/>
+    <div id="searchbox"></div>
+    <div class="left-panel">
+      <div id="color-list"></div>
+      <div id="price-range-input"></div>
+      <div id="domain-list"></div>
+      <div id="year-range-slider"></div>
+      <div id="rating-menu"></div>
+    </div>
+
+    <div class="container">
+      <div class="search-panel">
+        <div class="search-panel__results">
+          <div id="hits"></div>
+        </div>
+      </div>
+  
+      <div id="pagination"></div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/algoliasearch/3.32.0/algoliasearchLite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.6.0"></script>
+  <script src="./src/app.js"></script>
+  <script src="https://kit.fontawesome.com/c8aec3362b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
