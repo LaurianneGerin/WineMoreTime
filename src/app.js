@@ -85,7 +85,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#searchbox',
-    placeholder: 'Which wine makes you feel so fine ?',
+    placeholder: 'e.g., Saint Emilion',
   })
 );
 
@@ -128,6 +128,16 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.pagination({
     container: '#pagination',
+  })
+);
+search.addWidget(
+  instantsearch.widgets.sortBy({
+    container: '#sort-by',
+    items: [
+      { label: 'Filter price', value: 'test_WINE' },
+      { label: 'Ascending', value: 'instant_search_price_asc' },
+      { label: 'Descending', value: 'instant_search_price_desc' },
+    ],
   })
 );
 

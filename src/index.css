@@ -16,6 +16,7 @@ h1, h3, p {
   grid-template-columns: 20% 80%;
   grid-template-rows: auto auto;
   grid-column-gap: 55px;
+  grid-row-gap: 2%;
   margin: 2% 5%;
 }
 
@@ -26,12 +27,17 @@ h1, h3, p {
   width: 80%;
 }
 
-#searchbox {
+.wine-app-introduction {
   grid-column: 2/3;
   grid-row: 1;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#searchbox {
   margin-bottom: 0 !important;
-  width: 100%;
+  width: 80%;
 }
 
 #searchbox input {
@@ -39,7 +45,6 @@ h1, h3, p {
   border-radius: 0;
   border-bottom: 3px solid red;
   font-size: 20px;
-  font-style: italic;
   padding-left: 0;
 }
 
@@ -64,6 +69,13 @@ h1, h3, p {
   max-width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+#sort-by {
+  margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 #color-list {
@@ -188,12 +200,11 @@ h1, h3, p {
   background-color: rgb(108,14,37, 0.2);
 }
 input.ais-SearchBox-input::placeholder {
-  color: rgb(108,14,37, 0.5);
+  color: rgb(108,14,37, 0.4);
 }
 .ais-RefinementList-labelText, .ais-RatingMenu-count {
   color: rgb(108,14,37, 1);
 }
-
 .fa-cart-arrow-down:before {
   content: "\f218";
   font-size: 28px;
