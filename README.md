@@ -13,6 +13,6 @@ npm start
 
 Open http://localhost:3000 to see your app.
 
-## About wine-test-app
+## About Wine More Time
 
 <!-- TODO -->
