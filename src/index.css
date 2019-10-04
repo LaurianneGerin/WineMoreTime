@@ -205,6 +205,15 @@ input.ais-SearchBox-input::placeholder {
 .ais-RefinementList-labelText, .ais-RatingMenu-count {
   color: rgb(108,14,37, 1);
 }
+.ais-ClearRefinements-button {
+  background-color: rgb(108,14,37, 1);
+  height: 35px;
+  width: 120px;
+}
+.ais-ClearRefinements-button:hover {
+  background-color: rgb(108,14,37, 1);
+}
+
 .fa-cart-arrow-down:before {
   content: "\f218";
   font-size: 28px;

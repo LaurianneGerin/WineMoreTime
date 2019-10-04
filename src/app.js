@@ -130,6 +130,16 @@ search.addWidget(
     container: '#pagination',
   })
 );
+
+search.addWidget(
+  instantsearch.widgets.clearRefinements({
+    container: '#clear-refinements',
+    templates: {
+      resetLabel: 'Clear filters',
+    },
+  })
+);
+
 search.addWidget(
   instantsearch.widgets.sortBy({
     container: '#sort-by',
